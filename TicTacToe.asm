@@ -19,7 +19,6 @@ printString proc ;print a string procedure
 MOV ah, 09  ;interrupt vector for printing a string
 int 21h
 ret 
-
 newLine proc    ;print a newline
 MOV DL,0DH      ;display cariage return
 MOV AH,2        ;display the char stored in DL
@@ -28,7 +27,6 @@ MOV DL,0AH      ;display the cursor
 MOV AH,2
 INT 21H
 ret
-
 ;//////////////////////////////////////////////////////////////////
 MAIN PROC
 start:
