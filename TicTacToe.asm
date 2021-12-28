@@ -19,6 +19,15 @@ int 10h
 ; Set attribute to white foreground, black background
 mov BL, 0Fh
 
+game_loop:
+    ; Main loop body
+   
+
+end_program:
+ret
+
+current_player DB 0 ; 0 for X and 1 for O
+
 ;
 ; ----------
 ;
