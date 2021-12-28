@@ -21,6 +21,31 @@ mov BL, 0Fh
 
 game_loop:
     ; Main loop body
+    ; Print X or O with styling depending on turn                         
+print_current_player PROC
+    mov AH, 09h
+    
+    cmp current_player, 0 ; 0 if X, 1 if O
+    je is_x
+    
+    ; is O
+        mov AL, "O"
+        mov BL, 0Ch 
+        jmp end_pcp
+    
+    is_x:
+        mov AL, "X"
+        mov BL, 09h 
+    
+    end_pcp:
+        int 10h
+        
+        inc DL
+        mov AH, 2h 
+        int 10h
+        
+        ret
+print_current_player ENDP
    
 
 end_program:
