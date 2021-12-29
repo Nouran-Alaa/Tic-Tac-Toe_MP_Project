@@ -51,6 +51,13 @@ print_current_player ENDP
 end_program:
 ret
 
+;function to check the victory and the winner
+check_victory PROC
+
+
+ret
+check_victory ENDP
+
 current_player DB 0 ; 0 for X and 1 for O
 
 ;
