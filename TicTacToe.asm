@@ -40,8 +40,8 @@ print_current_player PROC
     end_pcp:
         int 10h
         
-        inc DL
-        mov AH, 2h 
+        inc DL  ;Increasing the position of the cursor horizontally
+        mov AH, 2h  ; 2 is for setting an interrupt to set the cursor position
         int 10h
         
         ret
