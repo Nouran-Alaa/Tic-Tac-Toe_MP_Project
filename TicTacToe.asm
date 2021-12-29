@@ -30,12 +30,12 @@ print_current_player PROC
     
     ; is O
         mov AL, "O"
-        mov BL, 0Ch 
+        mov BL, 0Ch ; C is an attribute of the light red color
         jmp end_pcp
     
     is_x:
         mov AL, "X"
-        mov BL, 09h 
+        mov BL, 09h ; 9 is the attribute of the light blue
     
     end_pcp:
         int 10h
