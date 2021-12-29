@@ -56,3 +56,8 @@ current_player DB 0 ; 0 for X and 1 for O
 ;
 ; ----------
 ;
+
+; 20H is the space character
+; Duplicate 20H 9 times (for 9 positions)
+; pos is an Array for the 9 grid positions
+pos DB 9 DUP(20H)
