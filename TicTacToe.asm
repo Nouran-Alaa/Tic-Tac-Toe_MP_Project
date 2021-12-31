@@ -22,7 +22,7 @@ mov BL, 0Fh
 game_loop:
     ; Main loop body
     
-
+;switching turns between players 
     cmp current_player, 0 ; 0 if X, 1 if O
     je if_x_CrntPlyr
     
