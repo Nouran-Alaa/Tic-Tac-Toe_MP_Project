@@ -86,3 +86,9 @@ current_player DB 0 ; 0 for X and 1 for O
 pos DB 9 DUP(20H)
 
 player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
+
+
+ ; Row 1
+    
+    mov AL, pos[0]
+    call print_char
