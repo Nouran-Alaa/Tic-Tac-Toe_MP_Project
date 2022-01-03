@@ -121,3 +121,27 @@ player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
     
     mov AL, pos[0]
     call print_char
+    
+print_message PROC
+    ; BL will be used to as the index into the string
+    mov BX, 0
+    
+    text_loop:
+        mov AH, 0Ah ; Write character without attribute
+        mov AL, message[BX]
+        cmp AL, "$" ; Check for sentinel
+        je end_text_loop ; End if sentinel is found
+        int 10h
+        inc BX
+        
+        inc DL ; Incrementing the cursor position horizontally
+        mov AH, 2h ; Set interrupt to set cursor position
+        int 10h
+        
+        jmp text_loop
+        
+    end_text_loop:
+        call carriage_return
+        ret
+print_message ENDP    
+
