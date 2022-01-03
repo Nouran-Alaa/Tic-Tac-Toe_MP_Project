@@ -85,6 +85,17 @@ ret
 ;function to check the victory and the winner
 check_victory PROC
 
+    cmp current_player, 0
+    je is_x_turn
+    
+    mov AL, "O"
+    jmp continue_check_victory
+        
+    is_x_turn:
+        mov AL, "X"
+
+    continue_check_victory:
+
 
 ret
 check_victory ENDP
