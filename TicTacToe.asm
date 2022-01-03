@@ -35,7 +35,22 @@ game_loop:
         ;if the current player is X switch to O 
         mov current_player, 1      
         jmp game_loop
+      
+print_char PROC
+                                                         
+    mov AH, 09h 
+    mov CX, 1 
     
+    ; Set attribute to white foreground, black background
+    mov BL, 0Fh
+  
+    int 10h    ; Print charcter interrupt
+    inc DL     
+    mov AH, 2h 
+    int 10h
+      
+    ret
+print_char ENDP
     
     ; Print X or O with styling depending on turn                         
 print_current_player PROC
