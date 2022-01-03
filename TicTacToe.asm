@@ -27,7 +27,7 @@ game_loop:
     je if_x_CrntPlyr
     
     ; if_o_CrntPlyr:
-            ;if the current player is O switch to X
+        ;if the current player is O switch to X
         mov current_player, 0        
         jmp game_loop
     
@@ -35,18 +35,19 @@ game_loop:
         ;if the current player is X switch to O 
         mov current_player, 1      
         jmp game_loop
-      
+
+; Sets the correct color attribute for each character and prints it
 print_char PROC
                                                          
-    mov AH, 09h 
-    mov CX, 1 
+    mov AH, 09h   ; Set interrupt to print
+    mov CX, 1     ; So that the character is only printed once
     
     ; Set attribute to white foreground, black background
     mov BL, 0Fh
   
-    int 10h    ; Print charcter interrupt
-    inc DL     
-    mov AH, 2h 
+    int 10h       ; Print character interrupt
+    inc DL        ; Increasing the position of the cursor horizontally
+    mov AH, 2h    ; 2 is for setting an interrupt to set the cursor position
     int 10h
       
     ret
@@ -54,6 +55,7 @@ print_char ENDP
     
     ; Print X or O with styling depending on turn                         
 print_current_player PROC
+    ; Set interrupt to print
     mov AH, 09h
     
     cmp current_player, 0 ; 0 if X, 1 if O
@@ -69,7 +71,7 @@ print_current_player PROC
         mov BL, 09h ; 9 is the attribute of the light blue
     
     end_pcp:
-        int 10h
+        int 10h  ; Print character interrupt
         
         inc DL  ;Increasing the position of the cursor horizontally
         mov AH, 2h  ; 2 is for setting an interrupt to set the cursor position
@@ -78,9 +80,6 @@ print_current_player PROC
         ret
 print_current_player ENDP
    
-
-end_program:
-ret
 
 ;function to check the victory and the winner
 check_victory PROC
@@ -100,11 +99,15 @@ check_victory PROC
 ret
 check_victory ENDP
 
-current_player DB 0 ; 0 for X and 1 for O
+
+end_program:
+ret
 
 ;
 ; ----------
 ;
+
+current_player DB 0 ; 0 for X and 1 for O
 
 ; 20H is the space character
 ; Duplicate 20H 9 times (for 9 positions)
