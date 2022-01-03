@@ -27,12 +27,12 @@ game_loop:
     je if_x_CrntPlyr
     
     ; if_o_CrntPlyr:
-    
+            ;if the current player is O switch to X
         mov current_player, 0        
         jmp game_loop
     
     if_x_CrntPlyr:
-
+        ;if the current player is X switch to O 
         mov current_player, 1      
         jmp game_loop
     
