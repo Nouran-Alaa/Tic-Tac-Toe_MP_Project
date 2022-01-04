@@ -52,6 +52,18 @@ print_char PROC
       
     ret
 print_char ENDP
+
+carriage_return PROC
+    inc DH 
+    mov DL, 1 
+    mov AH, 2h 
+    int 10h
+    
+    ret
+    
+carriage_return ENDP
+
+
     
     ; Print X or O with styling depending on turn                         
 print_current_player PROC
