@@ -95,6 +95,11 @@ check_victory PROC
 
     continue_check_victory:
 
+    victory:
+    mov player_won, 1
+    
+    no_victory:
+    ret
 
 ret
 check_victory ENDP
