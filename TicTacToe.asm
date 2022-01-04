@@ -95,6 +95,47 @@ check_victory PROC
 
     continue_check_victory:
 
+    ; Row 1, 2, 3
+    cmp pos[0], " "
+    je check_456 ; Check for " " empty position
+    
+    cmp AL, pos[0]
+    jne check_456
+    cmp AL, pos[1]
+    jne check_456
+    cmp AL, pos[2]
+    jne check_456   
+    jmp victory
+
+    ; Row 4, 5, 6
+    check_456:
+    cmp pos[3], " "
+    je check_789 
+    
+    cmp AL, pos[3]
+    jne check_789
+    cmp AL, pos[4]
+    jne check_789
+    cmp AL, pos[5]
+    jne check_789    
+    jmp victory
+    
+    ; Row 7, 8, 9
+    check_789:
+    cmp pos[6], " "
+    je check_147
+    
+    cmp AL, pos[6]
+    jne check_147
+    cmp AL, pos[7]
+    jne check_147
+    cmp AL, pos[8]
+    jne check_147    
+    jmp victory
+
+    ; Column 1, 4, 7
+    check_147:
+
     victory:
     mov player_won, 1
     
