@@ -21,6 +21,9 @@ mov BL, 0Fh
 
 game_loop:
     ; Main loop body
+    call print_current_player
+    call print_message
+    call check_victory
     
 ;switching turns between players 
     cmp current_player, 0 ; 0 if X, 1 if O
