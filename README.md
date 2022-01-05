@@ -1,9 +1,11 @@
-# Tic-Tac-Toe_MP_Project
+# Tic-Tac-Toe Game
 Tic-Tac-Toe Game Implementation in Assembly 8086.
 
 ## Problem Statement (Objective)
 
------- to be updated ------
+The game aims to:
+* Create a Tic-Tac-Toe game that has the functionality of traditional multiplayer Tic-Tac-Toe games.
+* Learn Assembly level programming, Assembler and Basics of 8086 Microprocessor.
 
 ## The Game
 
