@@ -177,12 +177,25 @@ pos DB 9 DUP(20H)
 
 player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
 
-
- ; Row 1
+; Row 1
     
     mov AL, pos[0]
     call print_char
     
+    mov AL, '|'
+    call print_char
+    
+    mov AL, pos[1]
+    call print_char
+    
+    mov AL, '|'
+    call print_char
+    
+    mov AL, pos[2]
+    call print_char
+    
+    call carriage_return
+
 print_message PROC
     ; BL will be used to as the index into the string
     mov BX, 0
