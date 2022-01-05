@@ -50,16 +50,16 @@ print_char PROC
   
     int 10h       ; Print character interrupt
     inc DL        ; Increasing the position of the cursor horizontally
-    mov AH, 2h    ; 2 is for setting an interrupt to set the cursor position
+    mov AH, 2h    ; 2h is for setting the interrupt to set the cursor position
     int 10h
       
     ret
 print_char ENDP
 
 carriage_return PROC
-    inc DH 
-    mov DL, 1 
-    mov AH, 2h 
+    inc DH        ; Increasing the position of the cursor vertically
+    mov DL, 1     ; Resetting horizontal cursor position
+    mov AH, 2h    ; 2h is for setting the interrupt to set the cursor position
     int 10h
     
     ret
