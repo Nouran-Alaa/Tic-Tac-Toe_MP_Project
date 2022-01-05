@@ -19,6 +19,10 @@ int 10h
 ; Set attribute to white foreground, black background
 mov BL, 0Fh
 
+;
+; ----------
+;
+
 game_loop:
     ; Main loop body
     call print_current_player
@@ -46,20 +50,23 @@ print_char PROC
     mov CX, 1     ; So that the character is only printed once
     
     ; Set the correct color attribute
+    ; If the Charc is X jump
     cmp AL, "X"
     je if_char_x
     
+    ; Else if the Charc is O jump
     cmp AL, "O"
     je if_char_o
     
+    ; else is something other than X or O 'default'
     ; Set attribute to white foreground, black background
     mov BL, 0Fh
     
     if_char_x:
-        mov BL, 09h ; 9h is the attribute of the light blue color
+        mov BL, 09h   ; 9h is the attribute of the light blue color
         
     if_char_o:
-        mov BL, 0Ch 
+        mov BL, 0Ch   ; Ch is the attribute of the light red color
   
     int 10h       ; Print character interrupt
     inc DL        ; Increasing the position of the cursor horizontally
