@@ -153,6 +153,39 @@ print_current_player PROC
         
         ret
 print_current_player ENDP
+
+
+print_message PROC
+    ; BL will be used to as the index into the string
+    mov BX, 0
+    
+    text_loop:
+        mov AH, 0Ah ; Write character without attribute
+        mov AL, message[BX]
+        cmp AL, "$" ; Check for sentinel
+        je end_text_loop ; End if sentinel is found
+        int 10h
+        inc BX
+        
+        inc DL ; Incrementing the cursor position horizontally
+        mov AH, 2h ; Set interrupt to set cursor position
+        int 10h
+        
+        jmp text_loop
+        
+    end_text_loop:
+        call carriage_return
+        ret
+print_message ENDP    
+
+get_input PROC
+    mov AH, 1 ; DOS interrupt to get character from keyboard
+    int 21h
+    
+    ; AL will contain the inputted character
+    
+    ret
+get_input ENDP
    
 
 ;function to check the victory and the winner
@@ -235,28 +268,4 @@ current_player DB 0 ; 0 for X and 1 for O
 pos DB 9 DUP(20H)
 
 player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
-
-
-print_message PROC
-    ; BL will be used to as the index into the string
-    mov BX, 0
-    
-    text_loop:
-        mov AH, 0Ah ; Write character without attribute
-        mov AL, message[BX]
-        cmp AL, "$" ; Check for sentinel
-        je end_text_loop ; End if sentinel is found
-        int 10h
-        inc BX
-        
-        inc DL ; Incrementing the cursor position horizontally
-        mov AH, 2h ; Set interrupt to set cursor position
-        int 10h
-        
-        jmp text_loop
-        
-    end_text_loop:
-        call carriage_return
-        ret
-print_message ENDP    
 
