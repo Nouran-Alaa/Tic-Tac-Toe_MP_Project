@@ -177,7 +177,7 @@ pos DB 9 DUP(20H)
 
 player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
 
-; Row 1
+; print Row 1
     
     mov AL, pos[0] ; put array of 0 in AL
     call print_char ; print array 
