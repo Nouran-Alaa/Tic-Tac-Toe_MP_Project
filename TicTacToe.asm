@@ -45,8 +45,15 @@ print_char PROC
     mov AH, 09h   ; Set interrupt to print
     mov CX, 1     ; So that the character is only printed once
     
+    ; Set the correct color attribute
+    cmp AL, "X"
+    je if_char_x
+    
     ; Set attribute to white foreground, black background
     mov BL, 0Fh
+    
+    if_char_x:
+        mov BL, 09h ; 9h is the attribute of the light blue color
   
     int 10h       ; Print character interrupt
     inc DL        ; Increasing the position of the cursor horizontally
