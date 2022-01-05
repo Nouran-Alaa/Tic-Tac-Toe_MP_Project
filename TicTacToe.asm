@@ -179,22 +179,22 @@ player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
 
 ; Row 1
     
-    mov AL, pos[0]
-    call print_char
+    mov AL, pos[0] ; put array of 0 in AL
+    call print_char ; print array 
     
-    mov AL, '|'
-    call print_char
+    mov AL, '|' ;put this sympol in AL
+    call print_char ; print this sympol
     
     mov AL, pos[1]
-    call print_char
+    call print_char ; print array of 1
     
     mov AL, '|'
-    call print_char
+    call print_char ; print this sympol 
     
     mov AL, pos[2]
     call print_char
     
-    call carriage_return
+    call carriage_return ; print new line 
 
 print_message PROC
     ; BL will be used to as the index into the string
