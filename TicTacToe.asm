@@ -67,6 +67,45 @@ carriage_return PROC
 carriage_return ENDP
 
 
+; print Row 1
+    
+    mov AL, pos[0] ; put array of 0 in AL
+    call print_char ; print array 
+    
+    mov AL, '|' ;put this sympol in AL
+    call print_char ; print this sympol
+    
+    mov AL, pos[1]
+    call print_char ; print array of 1
+    
+    mov AL, '|'
+    call print_char ; print this sympol 
+    
+    mov AL, pos[2]
+    call print_char
+    
+    call carriage_return ; print new line 
+
+
+  ; print Row 2
+    
+    mov AL, '-'  ; put symppol in AL
+    call print_char 
+    
+    mov AL, '+'
+    call print_char
+    
+    mov AL, '-'
+    call print_char
+    
+    mov AL, '+'
+    call print_char
+    
+    mov AL, '-'
+    call print_char
+    
+    call carriage_return
+
     
     ; Print X or O with styling depending on turn                         
 print_current_player PROC
@@ -177,24 +216,6 @@ pos DB 9 DUP(20H)
 
 player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
 
-; print Row 1
-    
-    mov AL, pos[0] ; put array of 0 in AL
-    call print_char ; print array 
-    
-    mov AL, '|' ;put this sympol in AL
-    call print_char ; print this sympol
-    
-    mov AL, pos[1]
-    call print_char ; print array of 1
-    
-    mov AL, '|'
-    call print_char ; print this sympol 
-    
-    mov AL, pos[2]
-    call print_char
-    
-    call carriage_return ; print new line 
 
 print_message PROC
     ; BL will be used to as the index into the string
