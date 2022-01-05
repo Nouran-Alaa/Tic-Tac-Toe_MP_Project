@@ -9,7 +9,8 @@ The game aims to:
 
 ## The Game
 
------- to be updated ------
+Tic-Tac-Toe is a multiplayer game with two symbols denoting the two players: X and O. Where you can face off friends (and/or yourself) in a tic-tac-toe battle! 💪 
+The playing board is a 3x3 square.
 
 ## How to play it
 
