@@ -81,8 +81,8 @@ carriage_return ENDP
     mov AL, '|'
     call print_char ; print this sympol 
     
-    mov AL, pos[2]
-    call print_char
+    mov AL, pos[2]  ; put array 2 in AL
+    call print_char ; print
     
     call carriage_return ; print new line 
 
@@ -90,21 +90,21 @@ carriage_return ENDP
   ; print Row 2
     
     mov AL, '-'  ; put symppol in AL
-    call print_char 
+    call print_char ; print sympol
     
-    mov AL, '+'
-    call print_char
+    mov AL, '+'  ; put symppol in AL
+    call print_char  ; print sympol 
     
-    mov AL, '-'
-    call print_char
+    mov AL, '-'  ; put symppol in AL
+    call print_char ; print sympol 
     
-    mov AL, '+'
-    call print_char
+    mov AL, '+'  ; put symppol in AL
+    call print_char ; print sympol 
     
-    mov AL, '-'
-    call print_char
+    mov AL, '-'  ; put symppol in AL
+    call print_char  ; print sympol 
     
-    call carriage_return
+    call carriage_return ; print new line
 
     
     ; Print X or O with styling depending on turn                         
