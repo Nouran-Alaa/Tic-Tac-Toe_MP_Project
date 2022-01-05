@@ -49,11 +49,17 @@ print_char PROC
     cmp AL, "X"
     je if_char_x
     
+    cmp AL, "O"
+    je if_char_o
+    
     ; Set attribute to white foreground, black background
     mov BL, 0Fh
     
     if_char_x:
         mov BL, 09h ; 9h is the attribute of the light blue color
+        
+    if_char_o:
+        mov BL, 0Ch 
   
     int 10h       ; Print character interrupt
     inc DL        ; Increasing the position of the cursor horizontally
