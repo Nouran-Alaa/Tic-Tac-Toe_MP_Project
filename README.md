@@ -31,20 +31,24 @@ The playing board is a 3x3 square.
 
 ## Rules
 
------- to be updated ------
+• Each player takes a turn placing his character (X or O) into one of the nine squares. 
+• A player cannot place his symbol in a square that is already occupied by a symbol. 
+• The game ends when a player creates a winning combination of his symbols or when there are no empty squares remaining. 
+• Winning combination is defined as three horizontally adjacent, three vertically adjacent, or three diagonally adjacent symbols. 
+• If neither player creates a winning combination when all nine squares are occupied, the game is a draw, often referred to as a "cat game."
 
 * * *
 
 ## Wining Conditions
 
 ### You can win by filling:
-1- X or O through a whole row
-![Rows](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Rows.gif) 
+1- X or O through a whole row <br />
+![Rows](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Rows.gif) <br />
 
-2- X or O through a whole column
-![Columns](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Columns.gif) 
+2- X or O through a whole column <br />
+![Columns](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Columns.gif) <br />
 
-3- X or O through a diagonal
+3- X or O through a diagonal <br />
 ![Diagonals](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Diagonals.gif) 
 
 * * *
