@@ -148,6 +148,25 @@ carriage_return ENDP
     call print_char
     
     call carriage_return
+ 
+    ; Print Row 4
+    
+    mov AL, '-'
+    call print_char
+    
+    mov AL, '+'
+    call print_char
+    
+    mov AL, '-'
+    call print_char
+    
+    mov AL, '+'
+    call print_char
+    
+    mov AL, '-'
+    call print_char
+    
+    call carriage_return
     
     
     ; Print X or O with styling depending on turn                         
