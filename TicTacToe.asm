@@ -335,12 +335,17 @@ ret
 ; ----------
 ;
 
-current_player DB 0 ; 0 for X and 1 for O
 
 ; 20H is the space character
 ; Duplicate 20H 9 times (for 9 positions)
 ; pos is an Array for the 9 grid positions
 pos DB 9 DUP(20H)
 
+current_player DB 0 ; 0 for X and 1 for O
+
+message DB ", choose position$" ; $ is the terminating character (sentinel character)
+
 player_won DB 0 ; 0 if a player hasn't won yet , 1 otherwise
+
+victory_message DB " has won!$" ; $ is the terminating character (sentinel character)
 
