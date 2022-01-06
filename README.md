@@ -67,7 +67,8 @@ The playing board is a 3x3 square.
 
 ## Future Development
 
------- to be updated ------
+* Make it responsive
+* Add A.I. (player vs. computer)
 
 * * *
 
