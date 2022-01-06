@@ -389,6 +389,13 @@ check_victory PROC
 ret
 check_victory ENDP
 
+print_victory_message PROC
+    ; BL will be used as the index into the string
+    mov BX, 0
+    
+        ret
+print_victory_message ENDP
+
 
 end_program:
 ret
