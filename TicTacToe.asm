@@ -393,6 +393,11 @@ print_victory_message PROC
     ; BL will be used as the index into the string
     mov BX, 0
     
+    victory_text_loop:
+        mov AH, 0Ah ; Write character without attribute
+        mov AL, victory_message[BX]
+        cmp AL, "$" ; Check for sentinel
+    
         ret
 print_victory_message ENDP
 
