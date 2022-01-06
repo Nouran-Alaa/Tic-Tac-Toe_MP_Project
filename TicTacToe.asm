@@ -167,7 +167,28 @@ carriage_return ENDP
     call print_char
     
     call carriage_return
+   
+; Print Row 5
     
+    mov AL, pos[6]
+    call print_char
+    
+    mov AL, '|'
+    call print_char
+    
+    mov AL, pos[7]
+    call print_char
+    
+    mov AL, '|'
+    call print_char
+    
+    mov AL, pos[8]
+    call print_char
+    
+    call carriage_return
+    call carriage_return
+    
+    ret
     
     ; Print X or O with styling depending on turn                         
 print_current_player PROC
