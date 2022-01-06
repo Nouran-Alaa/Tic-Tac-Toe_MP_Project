@@ -23,7 +23,13 @@ The playing board is a 3x3 square.
 
 ## How to play it
 
------- to be updated ------
+1) Open the emulator (emu8086) paste the code and click 'emulate'.
+2) Click 'run', and the terminal will appear as the following figure:
+![Source](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/src.PNG)
+
+3) Choose either 'X' or 'O'.
+4) You should choose a number between '1 --> 9' (1,9 included), thus the game wouldn't have any errors.
+5) Use tactics to win by filling three adjacent symbols in the grid.
 
 * * *
 
