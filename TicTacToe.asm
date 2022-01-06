@@ -396,6 +396,7 @@ print_victory_message PROC
         ret
 print_victory_message ENDP
 
+; Prints the player who has won with a victory message
 player_wins:
 call print_grid
 call print_current_player
