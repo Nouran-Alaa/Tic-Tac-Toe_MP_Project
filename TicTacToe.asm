@@ -2,8 +2,7 @@ org 100h
 
 ;
 ; Initialise
-;
-                   
+;                  
 ; Set video mode
 mov AL, 03h
 mov AH, 0
