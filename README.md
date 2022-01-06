@@ -55,7 +55,9 @@ Other Read me
 
 
 
-# <strong>Sorted Array</strong>
+# <strong>Tic Tac Toe</strong>
 * ## Project Summary: 
     An Assembly program Game " Tic Tac Toe " called ('X' and 'O' ) that two player can compete with each other and one will win.
     
+* * *
+
