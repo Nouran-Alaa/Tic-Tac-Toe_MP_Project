@@ -14,6 +14,7 @@ The playing board is a 3x3 square.
 
 ## The Emulation Program 
     We Use ( EMU8086 ) to emulate our Code and Open our Program. 
+    ![Screenshot (460)](https://user-images.githubusercontent.com/66433551/148336724-6144cc29-2d59-4221-8f5f-21e373db56c0.png)
 
 ## How to play it
 
