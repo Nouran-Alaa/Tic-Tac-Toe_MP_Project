@@ -328,6 +328,7 @@ check_victory PROC
     jne check_258    
     jmp victory
 
+    ; Column 2, 5, 8
     check_258:
     cmp pos[1], " "
     je check_369 ; Check for " " empty position
@@ -340,6 +341,7 @@ check_victory PROC
     jne check_369    
     jmp victory
 
+    ; Column 3, 6, 9
     check_369:
     cmp pos[2], " "
     je check_159 ; Check for " " empty position
@@ -365,6 +367,7 @@ check_victory PROC
     jne check_357    
     jmp victory
 
+    ; Diagonal 3, 5, 7
     check_357:
     cmp pos[2], " "
     je no_victory ; Check for " " empty position
