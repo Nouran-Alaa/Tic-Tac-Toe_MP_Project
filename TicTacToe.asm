@@ -28,6 +28,10 @@ game_loop:
     call print_message
     call check_victory
     
+    ; Check if any player has won (check if 'player_won' variable is equal to 1)
+    cmp player_won, 1
+    je player_wins
+    
 ;switching turns between players 
     cmp current_player, 0 ; 0 if X, 1 if O
     je if_x_CrntPlyr
