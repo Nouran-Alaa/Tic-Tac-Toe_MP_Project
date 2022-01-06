@@ -396,6 +396,10 @@ print_victory_message PROC
         ret
 print_victory_message ENDP
 
+player_wins:
+call print_grid
+call print_current_player
+call print_victory_message
 
 end_program:
 ret
