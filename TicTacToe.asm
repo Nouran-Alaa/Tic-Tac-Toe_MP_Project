@@ -341,6 +341,19 @@ check_victory PROC
     jmp victory
 
     check_369:
+    cmp pos[2], " "
+    je check_159 ; Check for " " empty position
+    
+    cmp AL, pos[2]
+    jne check_159
+    cmp AL, pos[5]
+    jne check_159
+    cmp AL, pos[8]
+    jne check_159    
+    jmp victory
+    
+    ; Diagonal 1, 5, 9
+    check_159:
 
     victory:
     mov player_won, 1
