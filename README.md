@@ -61,3 +61,14 @@ Other Read me
     
 * * *
 
+
+* ## Project Contributers:
+	|Name|BN|Role|
+    |:---|:--:|:--:|
+    |1. Nouran Alaa Hassan |65|                |
+    |2. Ahmed Ayman AbdElhakeem |3|Prints the grid to the screen|
+    |3. Mariem Mohamed ElAzab |55|             |
+    |4. Mohamed Mostafa |     |  |
+    |5. Anas Farag|         |    |
+    
+* * *
