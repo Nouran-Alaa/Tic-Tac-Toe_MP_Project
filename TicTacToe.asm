@@ -402,6 +402,9 @@ print_victory_message PROC
         mov AL, victory_message[BX]
         cmp AL, "$" ; Check for sentinel
     
+    end_victory_text_loop:
+        call carriage_return
+
         ret
 print_victory_message ENDP
 
