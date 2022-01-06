@@ -45,3 +45,17 @@ The playing board is a 3x3 square.
 - [Mohamed Mostafa](https://github.com/mahmedMostafa)
 - [Mariam Mohammed El-Azab](https://github.com/maryamazab)
 - [Anas Kahell]
+
+
+
+
+
+
+Other Read me 
+
+
+
+# <strong>Sorted Array</strong>
+* ## Project Summary: 
+    An Assembly program Game " Tic Tac Toe " called ('X' and 'O' ) that two player can compete with each other and one will win.
+    
