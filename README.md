@@ -68,8 +68,8 @@ Other Read me
     |1. [Nouran Alaa Hassan](https://github.com/Nouran-Alaa) |65|                |
     |2. [Ahmed Ayman AbdElhakeem](https://github.com/ahmedayman9) |3|Prints the grid to the screen|
     |3. [Mariem Mohamed ElAzab](https://github.com/maryamazab) |55|             |
-    |4. [Mohamed Mostafa](https://github.com/mahmedMostafa) |     |  |
-    |5. Anas Farag|         |    |
+    |4. [Mohamed Mostafa Mohamed](https://github.com/mahmedMostafa) |     |  |
+    |5. Anas Farag Ali |13|    |
     
 * * *
 
