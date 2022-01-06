@@ -265,7 +265,11 @@ get_input PROC
     
     ret
 get_input ENDP
-   
+
+set_chosen_position PROC
+    ; AL will contain the inputted value
+    ; But we must subtract 31h to convert the ASCII input into a numerical value between 1 and 9, (31h and not 30h to account for 0-index)
+    ; (assuming that the inputted value was between 1 and 9) 
 
 ;function to check the victory and the winner
 check_victory PROC
