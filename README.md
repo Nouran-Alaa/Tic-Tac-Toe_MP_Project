@@ -1,7 +1,7 @@
 # Tic-Tac-Toe Game
 Tic-Tac-Toe Game Implementation in Assembly 8086.
 
-## <u> This project aims to: </u>
+## This project aims to:
 * Create a Tic-Tac-Toe game that has the functionality of traditional multiplayer Tic-Tac-Toe games.
 * Learn Assembly level programming, Assembler and Basics of 8086 Microprocessor.
 
@@ -52,12 +52,6 @@ The playing board is a 3x3 square.
 * * *
 
 ## Logic
-
------- to be updated ------
-
-* * *
-
-## Software Specifications
 
 ------ to be updated ------
 
