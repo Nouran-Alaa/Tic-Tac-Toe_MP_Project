@@ -366,6 +366,16 @@ check_victory PROC
     jmp victory
 
     check_357:
+    cmp pos[2], " "
+    je no_victory ; Check for " " empty position
+    
+    cmp AL, pos[2]
+    jne no_victory
+    cmp AL, pos[4]
+    jne no_victory
+    cmp AL, pos[6]
+    jne no_victory    
+    jmp victory
 
     victory:
     mov player_won, 1
