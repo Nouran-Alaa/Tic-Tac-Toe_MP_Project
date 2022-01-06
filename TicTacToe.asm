@@ -270,7 +270,11 @@ set_chosen_position PROC
     ; AL will contain the inputted value
     ; But we must subtract 31h to convert the ASCII input into a numerical value between 1 and 9, (31h and not 30h to account for 0-index)
     ; (assuming that the inputted value was between 1 and 9) 
-
+    
+    SUB AL, 31h
+    mov BL, AL ; Because we must use BX to index pos
+    mov BH, 0
+    
 ;function to check the victory and the winner
 check_victory PROC
 
