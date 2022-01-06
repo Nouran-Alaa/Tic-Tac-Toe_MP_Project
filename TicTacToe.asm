@@ -90,6 +90,18 @@ carriage_return PROC
     
 carriage_return ENDP
 
+; Prints the grid to the screen
+print_grid PROC
+    
+
+    mov AL, 03h
+    mov AH, 0
+    int 10h
+    
+    mov DL, 1
+    mov DH, 1
+    mov AH, 2h 
+    int 10h 
 
 ; print Row 1
     
@@ -189,7 +201,8 @@ carriage_return ENDP
     call carriage_return
     
     ret
-    
+   print_grid ENDP
+
     ; Print X or O with styling depending on turn                         
 print_current_player PROC
     ; Set interrupt to print
