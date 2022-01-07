@@ -112,6 +112,11 @@ je end_text_loop ; End if sentinel is found
 int 10h
 inc BX
 ```
+6- Changing the color of a character when needing to print it can be achieved by changing the content of `BL`, light blue is `09h` for example
+```
+mov AL, "O"
+mov BL, 0Ch ; C is an attribute of the light red color
+```
 * * *
 
 ## Future Development
