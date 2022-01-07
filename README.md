@@ -91,6 +91,18 @@ mov AH, 09h
 //what should be printed goes here
 int 10h
 ```
+4- Going to next line is done with a function called `carriage_return`, which will be used everytime we want to go to the next line
+```
+carriage_return PROC
+    inc DH ; Incrementing the cursor position vertically
+    mov DL, 1 ; Resetting horizontal cursor position
+    mov AH, 2h ; Set interrupt to set cursor position
+    int 10h
+    
+    ret
+    
+carriage_return ENDP
+```
 * * *
 
 ## Future Development
