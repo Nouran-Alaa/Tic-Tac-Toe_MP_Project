@@ -69,15 +69,22 @@ The playing board is a `3x3` square. <br /> <br />
 
 ## Logic
 
-This part is goint to include some of the logic and code snippets from our project
+This part is going to include some of the logic and code snippets from our project
 
-1- Settings the video mode is done by this code snippet, we change the interrupt mode to 0 (which is used for playing the video)
+1- Settings the video mode is done by this code snippet, we change the interrupt mode to `0` (which is used for playing the video)
 ```
 mov AL, 03h
 mov AH, 0
 int 10h
 ```
-
+2- Setting the cursor position, this is used to change the cursor position by chaning the interrupt mode to `2`
+```
+mov DH, 1
+mov DL, 1
+mov BH, 0
+mov AH, 2
+int 10h
+```
 * * *
 
 ## Future Development
