@@ -130,7 +130,7 @@ mov BL, 0Ch ; C is an attribute of the light red color
 
 This is a video for testing the Project: <br />
 	
-[![X-O](http://img.youtube.com/vi/j9TQ7V8YBro&ab_channel=AhmedAyman/0.jpg)](https://www.youtube.com/watch?v=j9TQ7V8YBro&ab_channel=AhmedAyman "X-O Game")
+[![X-O](https://img.youtube.com/vi/j9TQ7V8YBro&ab_channel=AhmedAyman/0.jpg)](https://www.youtube.com/watch?v=j9TQ7V8YBro&ab_channel=AhmedAyman "X-O Game")
 	
 
 * ## Project References: 
