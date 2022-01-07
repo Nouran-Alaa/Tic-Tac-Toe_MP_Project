@@ -128,7 +128,7 @@ mov BL, 0Ch ; C is an attribute of the light red color
 
 ## Project Testing:
 
-	This is a video for testing the Project:
+	This is a video for testing the Project: https://youtu.be/j9TQ7V8YBro
 
 * ## Project References: 
 	* #### Playlists:
