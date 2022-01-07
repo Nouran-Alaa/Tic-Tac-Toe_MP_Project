@@ -72,7 +72,7 @@ The playing board is a `3x3` square. <br /> <br />
 This part is going to include some of the logic and code snippets from our project
 
 1- Settings the video mode is done by this code snippet, we change the interrupt mode to `0` (which is used for playing the video)
-```
+```asm
 mov AL, 03h
 mov AH, 0
 int 10h
