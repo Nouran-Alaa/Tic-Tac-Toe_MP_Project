@@ -350,7 +350,7 @@ check_victory PROC
     ; Column 1, 4, 7
     check_147:
     cmp pos[0], " "
-    je continue_258 ; Check for " " empty position
+    je check_258 ; Check for " " empty position
     
     cmp AL, pos[0]
     jne check_258
