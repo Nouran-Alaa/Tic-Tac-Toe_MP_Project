@@ -100,52 +100,53 @@ carriage_return ENDP
 ; Prints the grid to the screen
 print_grid PROC
     
-
+    ; Set video mode to clear screen
     mov AL, 03h
     mov AH, 0
     int 10h
     
+    ; reset cursor position
     mov DL, 1
     mov DH, 1
-    mov AH, 2h 
+    mov AH, 2h  ; Set interrupt to set cursor position
     int 10h 
 
 ; print Row 1
     
-    mov AL, pos[0] ; put array of 0 in AL
-    call print_char ; print array 
+    mov AL, pos[0] ; put charc (located in index '0' of the array 'pos') in AL
+    call print_char ; print this char
     
     mov AL, '|' ;put this sympol in AL
     call print_char ; print this sympol
     
     mov AL, pos[1]
-    call print_char ; print array of 1
+    call print_char 
     
     mov AL, '|'
-    call print_char ; print this sympol 
+    call print_char  
     
-    mov AL, pos[2]  ; put array 2 in AL
-    call print_char ; print
+    mov AL, pos[2] 
+    call print_char 
     
     call carriage_return ; print new line 
 
 
   ; print Row 2
     
-    mov AL, '-'  ; put symppol in AL
-    call print_char ; print sympol
+    mov AL, '-'  ; put this sympol in AL
+    call print_char ; print this sympol
     
-    mov AL, '+'  ; put symppol in AL
-    call print_char  ; print sympol 
+    mov AL, '+'  ; put this sympol in AL
+    call print_char  ; print this sympol 
     
-    mov AL, '-'  ; put symppol in AL
-    call print_char ; print sympol 
+    mov AL, '-'  
+    call print_char  
     
-    mov AL, '+'  ; put symppol in AL
-    call print_char ; print sympol 
+    mov AL, '+'  
+    call print_char  
     
-    mov AL, '-'  ; put symppol in AL
-    call print_char  ; print sympol 
+    mov AL, '-'  
+    call print_char  
     
     call carriage_return ; print new line
 
@@ -204,8 +205,8 @@ print_grid PROC
     mov AL, pos[8]
     call print_char
     
-    call carriage_return
-    call carriage_return
+    call carriage_return    ; print new line
+    call carriage_return    ; print new line
     
     ret
    print_grid ENDP
