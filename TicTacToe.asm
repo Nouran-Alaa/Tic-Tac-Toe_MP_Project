@@ -282,8 +282,14 @@ set_chosen_position PROC
     cmp current_player, 0
     je is_x_scp
     
+    ; is_O
+        mov pos[BX], "O"
+        jmp end_scp
+    
     is_x_scp:
         mov pos[BX], "X"
+        
+    end_scp:
     
     ret
 set_chosen_position ENDP
