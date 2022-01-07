@@ -1,5 +1,13 @@
 # Tic-Tac-Toe Game
-Tic-Tac-Toe Game Implementation in Assembly 8086.
+
+<h1 align="center">
+  <img src="https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Logo.png" width="120px" />
+</h1>
+
+
+<h1 align="center">
+  Tic-Tac-Toe Game Implementation in Assembly 8086.
+</h1>
 
 ## This project aims to:
 * Create a Tic-Tac-Toe game that has the functionality of traditional multiplayer Tic-Tac-Toe games.
