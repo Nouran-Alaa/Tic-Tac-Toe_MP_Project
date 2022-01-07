@@ -85,6 +85,12 @@ mov BH, 0
 mov AH, 2
 int 10h
 ```
+3- Printing something on the screen, this is done by changing the interrupt mode to `09h`
+```
+mov AH, 09h
+//what should be printed goes here
+int 10h
+```
 * * *
 
 ## Future Development
