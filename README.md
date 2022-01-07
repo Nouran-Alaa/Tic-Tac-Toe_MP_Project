@@ -9,8 +9,10 @@ Tic-Tac-Toe Game Implementation in Assembly 8086.
 
 ## The Game
 
-Tic-Tac-Toe is a multiplayer game with two symbols denoting the two players: X and O. Where you can face off friends (and/or yourself) in a tic-tac-toe battle! 💪 
-The playing board is a 3x3 square.
+Tic-Tac-Toe is a multiplayer game with two symbols denoting the two players: X and O. Where you can face off friends (and/or yourself) in a tic-tac-toe battle! 💪 <br />
+The playing board is a 3x3 square. <br /> <br />
+![game1](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/game1.png) <br />
+![game2](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/game2.png)
 
 * * *
 
@@ -35,11 +37,11 @@ The playing board is a 3x3 square.
 
 ## Rules
 
-• Each player takes a turn placing his character (X or O) into one of the nine squares. 
-• A player cannot place his symbol in a square that is already occupied by a symbol. 
-• The game ends when a player creates a winning combination of his symbols or when there are no empty squares remaining. 
-• Winning combination is defined as three horizontally adjacent, three vertically adjacent, or three diagonally adjacent symbols. 
-• If neither player creates a winning combination when all nine squares are occupied, the game is a draw, often referred to as a "cat game."
+• Each player takes a turn placing his character (X or O) into one of the nine squares. <br />
+• A player cannot place his symbol in a square that is already occupied by a symbol. <br />
+• The game ends when a player creates a winning combination of his symbols or when there are no empty squares remaining. <br />
+• Winning combination is defined as three horizontally adjacent, three vertically adjacent, or three diagonally adjacent symbols. <br />
+• If neither player creates a winning combination when all nine squares are occupied, the game is a draw, often referred to as a "cat game." <br />
 
 * * *
 
@@ -76,39 +78,3 @@ The playing board is a 3x3 square.
 - [Mohamed Mostafa](https://github.com/mahmedMostafa)
 - [Mariam Mohammed El-Azab](https://github.com/maryamazab)
 - [Anas Kahell](https://github.com/AnasKahell)
-
-* * *
-
-
-
-
-
-
-Other Read me 
-
-
-
-# <strong>Tic Tac Toe</strong>
-* ## Project Summary: 
-    An Assembly program Game " Tic Tac Toe " called ('X' and 'O' ) that two player can compete with each other and one will win.
-    
-* * *
-
-
-* ## Project Contributers:
-	|Name|BN|Role|
-    |:---|:--:|:--:|
-    |1. [Nouran Alaa Hassan](https://github.com/Nouran-Alaa) |65|                |
-    |2. [Ahmed Ayman AbdElhakeem](https://github.com/ahmedayman9) |3|Prints the grid to the screen|
-    |3. [Mariem Mohamed ElAzab](https://github.com/maryamazab) |55|             |
-    |4. [Mohamed Mostafa Mohamed](https://github.com/mahmedMostafa) |     |  |
-    |5. Anas Farag Ali |13|    |
-    
-* * *
-
-
-
-
-
-* ## Project Description:
-     
