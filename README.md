@@ -6,7 +6,7 @@
 
 
 <h1 align="center">
-  Tic-Tac-Toe Game Implementation in `Assembly 8086`.
+  Tic-Tac-Toe Game Implementation in Assembly 8086.
 </h1>
 
 ## This project aims to:
