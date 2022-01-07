@@ -24,8 +24,11 @@ mov BL, 0Fh
 
 game_loop:
     ; Main loop body
+    call print_grid
     call print_current_player
     call print_message
+    call get_input
+    call set_chosen_position
     call check_victory
     
     ; Check if any player has won (check if 'player_won' variable is equal to 1)
@@ -83,6 +86,7 @@ print_char PROC
     ret
 print_char ENDP
 
+; Print new line
 carriage_return PROC
     inc DH        ; Increasing the position of the cursor vertically
     mov DL, 1     ; Resetting horizontal cursor position
