@@ -56,13 +56,13 @@ The playing board is a `3x3` square. <br /> <br />
 ## Wining Conditions
 
 ### You can win by filling:
-1- `X` or `O` through a whole row <br />
+1- `X` or `O` through a whole row <br /><br />
 ![Rows](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Rows.gif) <br />
 
-2- `X` or `O` through a whole column <br />
+2- `X` or `O` through a whole column <br /><br />
 ![Columns](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Columns.gif) <br />
 
-3- `X` or `O` through a diagonal <br />
+3- `X` or `O` through a diagonal <br /><br />
 ![Diagonals](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/Diagonals.gif) 
 
 * * *
@@ -128,7 +128,10 @@ mov BL, 0Ch ; C is an attribute of the light red color
 
 ## Project Testing:
 
-	This is a video for testing the Project: https://youtu.be/j9TQ7V8YBro
+	This is a video for testing the Project:<br />
+	
+	[![X-O](http://img.youtube.com/vi/j9TQ7V8YBro&ab_channel=AhmedAyman/0.jpg)](https://www.youtube.com/watch?v=j9TQ7V8YBro&ab_channel=AhmedAyman "X-O Game")
+	
 
 * ## Project References: 
 	* #### Playlists:
