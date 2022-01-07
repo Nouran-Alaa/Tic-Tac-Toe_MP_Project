@@ -396,7 +396,7 @@ check_victory PROC
     mov player_won, 1
     
     no_victory:
-    ret
+    
 
 ret
 check_victory ENDP
@@ -409,6 +409,16 @@ print_victory_message PROC
         mov AH, 0Ah ; Write character without attribute
         mov AL, victory_message[BX]
         cmp AL, "$" ; Check for sentinel
+        je end_victory_text_loop ; End if sentinel is found
+        
+        int 10h
+        inc BX
+        
+        inc DL ; Incrementing the cursor position horizontally
+        mov AH, 2h ; Set interrupt to set cursor position
+        int 10h
+        
+        jmp victory_text_loop
     
     end_victory_text_loop:
         call carriage_return
