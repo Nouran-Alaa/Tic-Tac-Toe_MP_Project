@@ -78,7 +78,7 @@ mov AH, 0
 int 10h
 ```
 2- Setting the cursor position, this is used to change the cursor position by chaning the interrupt mode to `2`
-```
+```asm
 mov DH, 1
 mov DL, 1
 mov BH, 0
@@ -86,13 +86,13 @@ mov AH, 2
 int 10h
 ```
 3- Printing something on the screen, this is done by changing the interrupt mode to `09h`
-```
+```asm
 mov AH, 09h
 //what should be printed goes here
 int 10h
 ```
 4- Going to next line is done with a function called `carriage_return`, which will be used everytime we want to go to the next line
-```
+```asm
 carriage_return PROC
     inc DH ; Incrementing the cursor position vertically
     mov DL, 1 ; Resetting horizontal cursor position
@@ -104,7 +104,7 @@ carriage_return PROC
 carriage_return ENDP
 ```
 5- Printing a String/Text is done by printing every character until we reach the symbol `$`, which is the conventional way to determine the end of a String
-```
+```asm
 mov AH, 0Ah ; Write character without attribute
 mov AL, message[BX]
 cmp AL, "$" ; Check for sentinel
@@ -113,7 +113,7 @@ int 10h
 inc BX
 ```
 6- Changing the color of a character when needing to print it can be achieved by changing the content of `BL`, light blue is `09h` for example
-```
+```asm
 mov AL, "O"
 mov BL, 0Ch ; C is an attribute of the light red color
 ```
