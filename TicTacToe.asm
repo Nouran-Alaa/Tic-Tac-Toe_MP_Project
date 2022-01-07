@@ -279,6 +279,15 @@ set_chosen_position PROC
     mov BL, AL ; Because we must use BX to index pos
     mov BH, 0
     
+    cmp current_player, 0
+    je is_x_scp
+    
+    is_x_scp:
+        mov pos[BX], "X"
+    
+    ret
+set_chosen_position ENDP
+    
 ;function to check the victory and the winner
 check_victory PROC
 
