@@ -26,7 +26,7 @@ The playing board is a 3x3 square. <br /> <br />
 ## How to play it
 
 1) Open the emulator (emu8086) paste the code and click 'emulate'.
-2) Click 'run', and the terminal will appear as the following figure:
+2) Click 'run', and the terminal will appear as the following figure: <br />
 ![Source](https://github.com/Nouran-Alaa/Tic-Tac-Toe_MP_Project/blob/master/Media/src.PNG)
 
 3) Choose either 'X' or 'O'.
@@ -70,6 +70,18 @@ The playing board is a 3x3 square. <br /> <br />
 * Make it responsive
 * Add A.I. (player vs. computer)
 
+* * *
+
+## Project Testing:
+
+	This is a video for testing the Project:
+
+* ## Project References: 
+	* #### Playlists:
+		* Learning git and github: https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF.
+	* #### Books:  
+		* prentice_the_intel_microprocessors_8th_edition_013.                      
+		* Assembly language for Intel-based computers by Kip R. Irvine.   
 * * *
 
 ## Team members
