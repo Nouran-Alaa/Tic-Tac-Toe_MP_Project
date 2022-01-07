@@ -102,7 +102,7 @@ carriage_return PROC
     ret
     
 carriage_return ENDP
-
+```
 5- Printing a String/Text is done by printing every character until we reach the symbol `$`, which is the conventional way to determine the end of a String
 ```
 mov AH, 0Ah ; Write character without attribute
