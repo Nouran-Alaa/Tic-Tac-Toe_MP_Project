@@ -5,7 +5,7 @@
 </h1>
 
 
-<h1 color="green">
+<h1 align="center">
   Tic-Tac-Toe Game Implementation in Assembly 8086.
 </h1>
 
